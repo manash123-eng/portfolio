@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purvi Shukla Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f0f2f5; color: #333; }
+    .navbar { background: #6c5ce7; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 999; transition: 0.3s; }
+    .navbar.sticky { background: #4834d4; }
+    .navbar .max-width { display: flex; justify-content: space-between; align-items: center; max-width: 1300px; margin: auto; padding: 0 20px; }
+    .logo a { font-size: 28px; color: #fff; font-weight: 600; text-decoration: none; }
+    .logo span { color: #fdcb6e; }
+    .menu { display: flex; list-style: none; }
+    .menu li { margin-left: 25px; }
+    .menu li a { text-decoration: none; color: #fff; font-size: 16px; transition: 0.3s; }
+    .menu li a:hover { color: #fdcb6e; }
+    .menu-btn { display: none; color: #fff; font-size: 22px; cursor: pointer; }
+    .home, .about, .projects, .contact { padding: 100px 0 60px; }
+    .home-content { text-align: center; padding-top: 100px; }
+    .text-1 { font-size: 22px; }
+    .text-2 { font-size: 48px; font-weight: 700; color: #6c5ce7; }
+    .text-3 { font-size: 26px; }
+    .typing { color: #fd79a8; font-weight: bold; }
+    .title { text-align: center; font-size: 36px; margin-bottom: 40px; color: #2d3436; }
+    .about-content, .projects .box, .contact form { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    .carousel .card { background: #ffeaa7; padding: 20px; border-radius: 10px; text-align: center; }
+    .carousel .text { font-weight: bold; font-size: 18px; margin-bottom: 10px; }
+    form .fields { display: flex; gap: 20px; }
+    form .field { flex: 1; margin-bottom: 15px; }
+    form input, form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    form button { padding: 10px 20px; background: #6c5ce7; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: 0.3s; }
+    form button:hover { background: #4834d4; }
+    .scroll-up-btn { position: fixed; bottom: 30px; right: 30px; height: 40px; width: 40px; background: #6c5ce7; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; display: none; z-index: 999; }
+    .scroll-up-btn.show { display: flex; }
+    @media (max-width: 768px) {
+      .menu { display: none; flex-direction: column; background: #6c5ce7; position: absolute; right: 20px; top: 60px; width: 150px; padding: 10px; }
+      .menu.active { display: flex; }
+      .menu-btn { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-up-btn"><i class="fas fa-angle-up"></i></div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Purvi<span>Shukla</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#projects" class="menu-btn">Projects</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+      </ul>
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </div>
+  </nav>
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Purvi Shukla</div>
+        <div class="text-3">And I'm a <span class="typing"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About Me</h2>
+      <div class="about-content">
+        <p>I am Purvi Shukla, a Computer Science Engineering student in my 2nd year at AKS University, Satna, Madhya Pradesh. I have a good command of HTML, CSS, JavaScript, and a strong foundation in C and C++. I’ve worked on real-world projects including a photo editor application. I’m passionate about learning and creating useful digital tools that make life easier and more creative.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="title">Projects</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <div class="text">Photo Editor</div>
+            <p>A feature-rich photo editor with filters, crop, text overlay, and stickers built using HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">Weather App</div>
+            <p>A simple weather forecast application using HTML, CSS, and JavaScript that displays current weather data based on user input.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">To-Do List</div>
+            <p>A minimal and effective to-do list app to add, delete, and mark tasks, built with HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact Me</h2>
+      <form action="#">
+        <div class="fields">
+          <div class="field name">
+            <input type="text" placeholder="Name" required>
+          </div>
+          <div class="field email">
+            <input type="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="field">
+          <input type="text" placeholder="Subject" required>
+        </div>
+        <div class="field textarea">
+          <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if (this.scrollY > 20) $('.navbar').addClass("sticky");
+        else $('.navbar').removeClass("sticky");
+        if (this.scrollY > 500) $('.scroll-up-btn').addClass("show");
+        else $('.scroll-up-btn').removeClass("show");
+      });
+      $('.scroll-up-btn').click(function() {
+        $('html').animate({ scrollTop: 0 });
+        $('html').css("scrollBehavior", "auto");
+      });
+      $('.navbar .menu li a').click(function() {
+        $('html').css("scrollBehavior", "smooth");
+      });
+      $('.menu-btn').click(function() {
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+      });
+      var typed = new Typed(".typing", {
+        strings: ["Developer", "Designer", "Student", "Problem Solver"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+      });
+      $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: { items: 1, nav: false },
+          600: { items: 2, nav: false },
+          1000: { items: 3, nav: false }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
